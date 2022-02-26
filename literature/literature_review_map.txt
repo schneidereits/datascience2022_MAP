@@ -1,0 +1,22 @@
+﻿id	label	x	y	cluster	weight<Links>	weight<Total link strength>	weight<Occurrences>	score<Avg. pub. year>
+1	afforestation	0.8116	-0.0491	2	16	48	31	2018.2903
+2	altitude	-0.0521	-0.5052	1	15	35	12	2017.3333
+3	aspect	-0.541	-0.3565	1	14	48	16	2016.5
+4	deforestation	0.9812	-0.1694	2	14	44	26	2018.2692
+5	elevation	-0.053	-0.3011	1	17	48	16	2016.3125
+6	establishment	-0.6381	0.238	3	16	67	27	2016.037
+7	forest cover	0.4791	-0.4468	2	15	36	15	2017.4667
+8	forest regeneration	-0.2061	0.8835	3	10	18	14	2019.8571
+9	generalized linear mixed model	-0.9006	0.516	3	12	32	16	2017.8125
+10	generalized linear model	-0.459	-0.4892	1	14	60	25	2015.72
+11	glm	-0.7512	-0.7298	1	13	28	10	2017.3
+12	land cover	1.2677	-0.0818	2	10	29	13	2018.8462
+13	linear mixed model	0.0456	0.3897	3	15	23	14	2016.3571
+14	machine learning	0.8499	0.4972	2	10	22	17	2019.7059
+15	random forest	0.9254	0.308	2	12	24	20	2019.35
+16	reforestation	0.5511	-0.0753	2	18	64	57	2015.9649
+17	regeneration	-0.4123	0.1339	3	19	119	67	2016.6269
+18	slope	-0.2136	-0.1745	1	19	79	27	2017.7407
+19	species composition	-0.9656	0.3431	3	13	37	16	2017.8125
+20	topography	-0.3719	-0.1591	1	17	38	10	2017.4
+21	vegetation	-0.3472	0.2283	3	17	63	28	2016.7857
