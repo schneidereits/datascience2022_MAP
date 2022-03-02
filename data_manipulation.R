@@ -7,33 +7,13 @@ library(readr)
 library(tidyverse)
 library(stringr)
 
-# import insect abundance data
-abundance <- read_csv("InsectAbundanceBiomassData/InsectAbundanceBiomassData.csv")
-# import plot meta data
-plots     <- read_csv("InsectAbundanceBiomassData/PlotData.csv")
-
-
-data <- left_join(abundance, plots) #%>% 
- # rename(biomass = Number) 
-#data <- rename_with(data, tolower)
-
-biomass <- data %>% filter(MetricAB=="biomass")
-abundance <- data %>% filter(MetricAB=="abundance") %>% na.omit()
-
-write_csv(abundance, "abundance.csv",na = "0" )
-
-
-ggplot(abundance, aes(Year, Number, group=as.factor(Plot_ID), color =)) +
-  geom_line() +
-  theme_classic() 
-
-
 # tree prediction
 
-
+# data import 
 forest_cover <- read_csv("Forest Cover Type Prediction.csv")
+forest_cover_big <- read_csv("covtype.csv")
 
-fc <- pivot_longer(forest_cover, cols = Soil_Type1:Soil_Type40, names_to = "soil_type") %>% 
+fc <- pivot_longer(forest_cover_big, cols = Soil_Type1:Soil_Type40, names_to = "soil_type") %>% 
   filter(value==1) %>% 
   select(-value) %>% 
   pivot_longer(., cols = Wilderness_Area1:Wilderness_Area4, names_to = "wilderness_area") %>% 
@@ -44,18 +24,14 @@ fc <- pivot_longer(forest_cover, cols = Soil_Type1:Soil_Type40, names_to = "soil
 
 fc_clean <- fc %>% 
   mutate(soil_type = str_replace(soil_type, "Soil_Type", ""),
-         soil_type = if_else(soil_type==1, "Cathedral", soil_type),
          soil_type = if_else(soil_type==3, "Haploborolis", soil_type),
          soil_type = if_else(soil_type %in% c(2,4,5,6), "Vanet", soil_type),
          soil_type = if_else(soil_type==7, "Gothic", soil_type),
-         soil_type = if_else(soil_type==8, "Limber", soil_type),
-         soil_type = if_else(soil_type==9, "Troutville", soil_type),
-         soil_type = if_else(soil_type %in% c(10,11,13,26,31,32,33), "Catacount", soil_type),
+         soil_type = if_else(soil_type %in% c(1,8,9,10,11,13,18,26,31,32,33), "Catacount", soil_type),
          soil_type = if_else(soil_type %in% c(12,29,30), "Legault", soil_type),
          soil_type = if_else(soil_type==14, "Pachic Argiborolis", soil_type),
          soil_type = if_else(soil_type==15, "unspecified", soil_type),
          soil_type = if_else(soil_type %in% c(16,17,19,20,23,35), "Cryaquolis", soil_type),
-         soil_type = if_else(soil_type==18, "Rogert", soil_type),
          soil_type = if_else(soil_type %in% c(21,22,23,24,25,27,28,31,32,33,38,39), "Leighcan", soil_type),
          soil_type = if_else(soil_type %in% c(34,35,36,37,40), "Cryorthents", soil_type),
        
@@ -76,7 +52,7 @@ fc_clean <- fc %>%
   
 
 
-write_csv(fc_clean,"Forest Cover Type Prediction tidy.csv")
+write_csv(fc_clean,"Forest Cover Type Prediction big tidy.csv")
 
 
 
@@ -85,11 +61,26 @@ ggplot(fc_clean, aes(sort(soil_type))) +
   theme_classic() 
 
 
-# insect herbivory 
-library(readxl)
-leaf_clean <- read_excel("ecy3301-sup-0001-datas1/DataS1/leaf_clean.xlsx") %>% 
-  mutate(`Leaf_area(cm)` = as.double(`Leaf_area(cm)`))
-  
-write_csv(as.data.frame(leaf_clean), "leaf_clean.csv")
 
-typeof( leaf_clean$`Leaf_area(cm)`)
+
+# # old code
+# 
+# # import insect abundance data
+# abundance <- read_csv("InsectAbundanceBiomassData/InsectAbundanceBiomassData.csv")
+# # import plot meta data
+# plots     <- read_csv("InsectAbundanceBiomassData/PlotData.csv")
+# 
+# 
+# data <- left_join(abundance, plots) #%>% 
+# # rename(biomass = Number) 
+# #data <- rename_with(data, tolower)
+# 
+# biomass <- data %>% filter(MetricAB=="biomass")
+# abundance <- data %>% filter(MetricAB=="abundance") %>% na.omit()
+# 
+# write_csv(abundance, "abundance.csv",na = "0" )
+# 
+# 
+# ggplot(abundance, aes(Year, Number, group=as.factor(Plot_ID), color =)) +
+#   geom_line() +
+#   theme_classic() 
