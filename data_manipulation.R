@@ -13,7 +13,7 @@ library(stringr)
 forest_cover <- read_csv("Forest Cover Type Prediction.csv")
 forest_cover_big <- read_csv("covtype.csv")
 
-fc <- pivot_longer(forest_cover_big, cols = Soil_Type1:Soil_Type40, names_to = "soil_type") %>% 
+fc <- pivot_longer(forest_cover, cols = Soil_Type1:Soil_Type40, names_to = "soil_type") %>% 
   filter(value==1) %>% 
   select(-value) %>% 
   pivot_longer(., cols = Wilderness_Area1:Wilderness_Area4, names_to = "wilderness_area") %>% 
@@ -54,7 +54,7 @@ fc_clean <- fc %>%
 
 
 
-write_csv(fc_clean,"Forest Cover Type Prediction big tidy.csv")
+write_csv(fc_clean,"Forest Cover Type Prediction small tidy.csv")
 
 
 
