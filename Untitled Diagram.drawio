@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-18T16:12:51.379Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="CWWQNcz1lYn9BK0SzyRq" version="16.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-18T17:18:39.569Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="0Xs6XwCeWotcgLv25D7S" version="16.6.4" type="github">
   <diagram id="F5COlkk1ww_O2vg0XRnn" name="Page-1">
     <mxGraphModel dx="1038" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -50,7 +50,7 @@
           <mxGeometry x="200" y="350" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Fz26QJrTUj5SuILDPpWq-10" value="Forest cover type prediction in rapidminer" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="550" width="120" height="80" as="geometry" />
+          <mxGeometry x="200" y="520" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Fz26QJrTUj5SuILDPpWq-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Fz26QJrTUj5SuILDPpWq-13" target="Fz26QJrTUj5SuILDPpWq-22">
           <mxGeometry relative="1" as="geometry" />
@@ -73,14 +73,14 @@
         <mxCell id="Fz26QJrTUj5SuILDPpWq-25" value="Model speed profiling and output parameter comparison" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="600" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Fz26QJrTUj5SuILDPpWq-32" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;fontStyle=1;strokeWidth=3;" vertex="1" parent="1">
-          <mxGeometry x="340" y="130" width="20" height="150" as="geometry" />
+        <mxCell id="Fz26QJrTUj5SuILDPpWq-38" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="350" y="145" width="20" height="135" as="geometry" />
         </mxCell>
-        <mxCell id="Fz26QJrTUj5SuILDPpWq-33" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;fontStyle=1;strokeWidth=3;" vertex="1" parent="1">
-          <mxGeometry x="340" y="300" width="20" height="180" as="geometry" />
+        <mxCell id="Fz26QJrTUj5SuILDPpWq-40" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="350" y="300" width="20" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="Fz26QJrTUj5SuILDPpWq-34" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;fontStyle=1;strokeWidth=3;" vertex="1" parent="1">
-          <mxGeometry x="340" y="500" width="20" height="170" as="geometry" />
+        <mxCell id="Fz26QJrTUj5SuILDPpWq-41" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="350" y="490" width="20" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
