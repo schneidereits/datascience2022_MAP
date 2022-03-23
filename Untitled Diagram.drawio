@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-18T17:18:39.569Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="0Xs6XwCeWotcgLv25D7S" version="16.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-23T09:55:23.436Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="HoPR3nAZ_MfQ_XQ0p19K" version="16.6.4" type="github">
   <diagram id="F5COlkk1ww_O2vg0XRnn" name="Page-1">
     <mxGraphModel dx="1038" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -73,13 +73,13 @@
         <mxCell id="Fz26QJrTUj5SuILDPpWq-25" value="Model speed profiling and output parameter comparison" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="600" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Fz26QJrTUj5SuILDPpWq-38" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeWidth=3;" vertex="1" parent="1">
+        <mxCell id="Fz26QJrTUj5SuILDPpWq-38" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeWidth=1;" vertex="1" parent="1">
           <mxGeometry x="350" y="145" width="20" height="135" as="geometry" />
         </mxCell>
-        <mxCell id="Fz26QJrTUj5SuILDPpWq-40" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeWidth=3;" vertex="1" parent="1">
+        <mxCell id="Fz26QJrTUj5SuILDPpWq-40" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeWidth=1;" vertex="1" parent="1">
           <mxGeometry x="350" y="300" width="20" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="Fz26QJrTUj5SuILDPpWq-41" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeWidth=3;" vertex="1" parent="1">
+        <mxCell id="Fz26QJrTUj5SuILDPpWq-41" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeWidth=1;" vertex="1" parent="1">
           <mxGeometry x="350" y="490" width="20" height="170" as="geometry" />
         </mxCell>
       </root>
