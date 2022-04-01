@@ -1,6 +1,6 @@
 ###############################################################################
 # Landscape Ecology and Data Science, HU Berlin
-# Authors: Shawn Schneidereit, Janis Klug
+# Authors: Janis Klug
 # Script for: Comparison of computational times of the rapidminer model runs
 # Date: 25.03.2022
 
@@ -25,7 +25,7 @@ scoring_time <- c(2000, 1000, 574, 4000)
 ###############################################################################
 
 # Creating a computation times dataframe
-df <- data.frame(model_type, total_time, runtime, 
+df <- data.frame(model_type, runtime, 
                  training_time, scoring_time)
 
 ###############################################################################
@@ -36,7 +36,7 @@ p_rt <-ggplot(data=df, aes(x=model_type, y=runtime)) +
   geom_bar(stat="identity", width = 0.6, fill = c("#000000","#F0E442",
                                                   "#009E73","#999999"))+
   xlab("model type")+
-  ylab("runtimes (ms)")+
+  ylab("runtime (ms)")+
   theme_classic()
 p_rt
 
