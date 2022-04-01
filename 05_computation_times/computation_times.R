@@ -13,13 +13,13 @@ library(ggplot2)
 # model type
 model_type <- c('NB', 'DL', 'GLM', 'RF')
 
-# Runtimes (ms)
+# Runtime (s)
 runtime <- c(295.332, 344.315, 304.432, 2426.231)
 
-# Training times (ms)
+# Training time (ms)
 training_time <- c(64, 595, 1000, 119)
 
-# Scoring times (ms)
+# Scoring time (ms)
 scoring_time <- c(2000, 1000, 574, 4000)
 
 ###############################################################################
@@ -31,18 +31,18 @@ df <- data.frame(model_type, runtime,
 ###############################################################################
 
 # Creating bar plots
-# Runtimes
+# Runtime
 p_rt <-ggplot(data=df, aes(x=model_type, y=runtime)) +
   geom_bar(stat="identity", width = 0.6, fill = c("#000000","#F0E442",
                                                   "#009E73","#999999"))+
   xlab("model type")+
-  ylab("runtime (ms)")+
+  ylab("runtime (s)")+
   scale_x_discrete(limits=c('NB', 'DL', 'GLM', 'RF'))+
   theme_classic()
 p_rt
 
-# Creating bar plots
-# training time
+
+# Training time
 p_trt <-ggplot(data=df, aes(x=model_type, y=training_time)) +
   geom_bar(stat="identity", width = 0.6, fill = c("#000000","#F0E442",
                                                   "#009E73","#999999"))+
@@ -53,8 +53,7 @@ p_trt <-ggplot(data=df, aes(x=model_type, y=training_time)) +
 p_trt
 
 
-# Creating bar plots
-# scoring time 
+# Scoring time 
 p_st <-ggplot(data=df, aes(x=model_type, y=scoring_time)) +
   geom_bar(stat="identity", width = 0.6, fill = c("#000000","#F0E442",
                                                   "#009E73","#999999"))+
