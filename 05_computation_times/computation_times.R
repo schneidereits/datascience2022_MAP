@@ -37,6 +37,7 @@ p_rt <-ggplot(data=df, aes(x=model_type, y=runtime)) +
                                                   "#009E73","#999999"))+
   xlab("model type")+
   ylab("runtime (ms)")+
+  scale_x_discrete(limits=c('NB', 'DL', 'GLM', 'RF'))+
   theme_classic()
 p_rt
 
@@ -47,6 +48,7 @@ p_trt <-ggplot(data=df, aes(x=model_type, y=training_time)) +
                                                   "#009E73","#999999"))+
   xlab("model type")+
   ylab("training time (ms)")+
+  scale_x_discrete(limits=c('NB', 'DL', 'GLM', 'RF'))+
   theme_classic()
 p_trt
 
@@ -58,6 +60,7 @@ p_st <-ggplot(data=df, aes(x=model_type, y=scoring_time)) +
                                                   "#009E73","#999999"))+
   xlab("model type")+
   ylab("scoring time (ms)")+
+  scale_x_discrete(limits=c('NB', 'DL', 'GLM', 'RF'))+
   theme_classic()
 p_st
 
